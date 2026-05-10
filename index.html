@@ -32,12 +32,9 @@ nav{display:flex;background:var(--bg2);border-bottom:1px solid var(--border);pad
 .badge{background:var(--red);color:#fff;font-size:10px;font-weight:700;padding:1px 8px;border-radius:20px;font-family:'Share Tech Mono',monospace;}
 .page{display:none;}
 .page.active{display:block;}
-
-/* CARTE */
 .carte-layout{display:grid;grid-template-columns:1fr 300px;height:calc(100vh - 110px);}
 .carte-zone{position:relative;overflow:hidden;background:#0d1117;}
 #map-img{width:100%;height:100%;object-fit:cover;display:block;}
-#map-overlay{position:absolute;inset:0;}
 #map-markers-layer{position:absolute;inset:0;pointer-events:none;}
 .map-marker{position:absolute;transform:translate(-50%,-50%);cursor:pointer;pointer-events:all;}
 .marker-dot{width:16px;height:16px;border-radius:50%;border:2px solid rgba(255,255,255,.5);position:relative;z-index:2;}
@@ -54,8 +51,6 @@ nav{display:flex;background:var(--bg2);border-bottom:1px solid var(--border);pad
 .leg-dot{width:8px;height:8px;border-radius:50%;}
 .carte-sidebar{background:var(--bg2);border-left:1px solid var(--border);padding:1rem;overflow-y:auto;}
 .sidebar-title{font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;margin-bottom:1rem;display:flex;justify-content:space-between;align-items:center;}
-
-/* POPUP AJOUT */
 .add-popup{position:absolute;background:var(--bg2);border:1px solid var(--border2);border-radius:8px;padding:1rem;z-index:100;width:260px;box-shadow:0 8px 32px rgba(0,0,0,.7);}
 .pop-title{font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--orange);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.75rem;display:flex;justify-content:space-between;}
 .pop-close{background:none;border:none;color:var(--muted);cursor:pointer;font-size:16px;}
@@ -66,8 +61,6 @@ nav{display:flex;background:var(--bg2);border-bottom:1px solid var(--border);pad
 .p-input,.p-select{width:100%;padding:6px 8px;background:var(--bg3);border:1px solid var(--border2);border-radius:4px;color:var(--text);font-size:12px;outline:none;font-family:'Barlow',sans-serif;}
 .p-input:focus{border-color:var(--orange);}
 .pop-btn{width:100%;padding:8px;background:var(--orange);border:none;border-radius:5px;color:#fff;font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;cursor:pointer;margin-top:.75rem;text-transform:uppercase;letter-spacing:.05em;}
-
-/* POPUP MARKER */
 .mk-popup{position:absolute;background:var(--bg2);border:1px solid var(--border2);border-radius:8px;padding:.875rem;z-index:200;width:230px;box-shadow:0 8px 32px rgba(0,0,0,.7);}
 .mk-type{font-size:13px;font-weight:700;margin-bottom:3px;}
 .mk-msg{font-size:12px;color:var(--muted);margin-bottom:6px;line-height:1.4;}
@@ -77,10 +70,7 @@ nav{display:flex;background:var(--bg2);border-bottom:1px solid var(--border);pad
 .mk-urg{background:rgba(239,68,68,.18);color:var(--red);border:1px solid rgba(239,68,68,.35);}
 .mk-dos{background:rgba(168,85,247,.15);color:var(--purple);border:1px solid rgba(168,85,247,.3);}
 .mk-clo{background:rgba(34,197,94,.12);color:var(--green);border:1px solid rgba(34,197,94,.28);grid-column:span 2;}
-
-/* CARD INTERVENTION */
-.i-card{background:var(--bg3);border:1px solid var(--border);border-radius:7px;padding:.75rem;margin-bottom:.6rem;position:relative;cursor:pointer;transition:border-color .15s;}
-.i-card:hover{border-color:var(--border2);}
+.i-card{background:var(--bg3);border:1px solid var(--border);border-radius:7px;padding:.75rem;margin-bottom:.6rem;position:relative;transition:border-color .15s;}
 .i-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:3px 0 0 3px;}
 .i-card.incendie::before,.i-card.fdf::before{background:var(--red)}
 .i-card.sap::before{background:var(--blue)}
@@ -96,8 +86,6 @@ nav{display:flex;background:var(--bg2);border-bottom:1px solid var(--border);pad
 .i-btn{flex:1;padding:5px;border:none;border-radius:4px;font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;cursor:pointer;text-transform:uppercase;}
 .i-btn-dos{background:rgba(168,85,247,.12);color:var(--purple);border:1px solid rgba(168,85,247,.25);}
 .i-btn-clo{background:rgba(34,197,94,.1);color:var(--green);border:1px solid rgba(34,197,94,.25);}
-
-/* DOSSIERS */
 .dos-layout{display:grid;grid-template-columns:280px 1fr;height:calc(100vh - 110px);}
 .dos-list{background:var(--bg2);border-right:1px solid var(--border);padding:1rem;overflow-y:auto;}
 .dos-item{background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:.7rem;margin-bottom:.5rem;cursor:pointer;transition:border-color .15s;}
@@ -126,8 +114,6 @@ nav{display:flex;background:var(--bg2);border-bottom:1px solid var(--border);pad
 .empty{text-align:center;padding:3rem 1rem;color:var(--muted);}
 .empty .ico{font-size:36px;margin-bottom:10px;}
 .empty p{font-size:12px;line-height:1.8;}
-
-/* STATS */
 .stats-wrap{padding:1.5rem;}
 .s-nums{display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem;margin-bottom:1.5rem;}
 .s-num{background:var(--bg2);border:1px solid var(--border);border-radius:7px;padding:.875rem;text-align:center;}
@@ -137,8 +123,6 @@ nav{display:flex;background:var(--bg2);border-bottom:1px solid var(--border);pad
 .chart-box{background:var(--bg2);border:1px solid var(--border);border-radius:7px;padding:1rem;}
 .chart-title{font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.75rem;}
 .chart-box canvas{max-height:160px;}
-
-/* TOAST */
 .toast{position:fixed;bottom:1.5rem;right:1.5rem;background:var(--bg3);border:1px solid var(--border2);border-radius:8px;padding:10px 16px;font-size:13px;z-index:9999;animation:tin .3s ease;}
 @keyframes tin{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
 .toast.s{border-color:rgba(34,197,94,.4);}
@@ -170,11 +154,10 @@ nav{display:flex;background:var(--bg2);border-bottom:1px solid var(--border);pad
   <button class="nav-btn" onclick="showPage('stats')" id="btn-stats">📊 Stats</button>
 </nav>
 
-<!-- CARTE -->
 <div class="page active" id="page-carte">
   <div class="carte-layout">
     <div class="carte-zone" id="carte-zone">
-      <img id="map-img" src="" style="width:100%;height:100%;object-fit:cover;display:block;">
+      <img id="map-img" src="map.png" style="width:100%;height:100%;object-fit:cover;display:block;">
       <div id="map-overlay" style="position:absolute;inset:0;cursor:crosshair;"></div>
       <div id="map-markers-layer" style="position:absolute;inset:0;pointer-events:none;"></div>
       <div id="add-popup" style="display:none;"></div>
@@ -202,7 +185,6 @@ nav{display:flex;background:var(--bg2);border-bottom:1px solid var(--border);pad
   </div>
 </div>
 
-<!-- DOSSIERS -->
 <div class="page" id="page-dossiers">
   <div class="dos-layout">
     <div class="dos-list">
@@ -218,7 +200,6 @@ nav{display:flex;background:var(--bg2);border-bottom:1px solid var(--border);pad
   </div>
 </div>
 
-<!-- STATS -->
 <div class="page" id="page-stats">
   <div class="stats-wrap">
     <div class="sidebar-title" style="margin-bottom:1.25rem">📊 Statistiques</div>
@@ -244,20 +225,12 @@ let intervs = {};
 let dossList = {};
 let iCount = 0, dCount = 0, clos = 0;
 let chronos = {};
-let sd = {inc:0,sap:0,sr:0,fdf:0,pol:0,ren:0};
+let sd = {inc:0,sap:0,sr:0,fdf:0,pol:0,ren:0,total:0};
 let charts = {};
+let closedIds = new Set();
 
-// Horloge
 setInterval(()=>{ document.getElementById('clock').textContent = new Date().toLocaleTimeString('fr-FR'); },1000);
 
-// Carte image
-(async()=>{
-  const res = await fetch('https://dispatch-central-production.up.railway.app/ping').catch(()=>null);
-  // Charge l'image de la carte encodée en base64
-  document.getElementById('map-img').src = 'map.png';
-})();
-
-// Nav
 function showPage(p){
   document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));
   document.querySelectorAll('.nav-btn').forEach(x=>x.classList.remove('active'));
@@ -265,41 +238,34 @@ function showPage(p){
   document.getElementById('btn-'+p).classList.add('active');
 }
 
-// Outil
 function setTool(t){
   tool=t;
   document.querySelectorAll('.tool-btn').forEach(b=>b.classList.remove('active'));
   document.getElementById('tool-'+t).classList.add('active');
-  document.getElementById('map-overlay').style.cursor = t==='add'?'crosshair':'default';
+  document.getElementById('map-overlay').style.cursor=t==='add'?'crosshair':'default';
 }
 
-// Couleurs
 function tColor(t){ if(!t) return '#f97316'; if(t.includes('Incendie')||t.includes('FDF')) return '#ef4444'; if(t.includes('SAP')) return '#3b82f6'; if(t.includes('SR')) return '#eab308'; if(t.includes('Police')) return '#a855f7'; return '#f97316'; }
 function tClass(t){ if(!t) return 'renfort'; if(t.includes('Incendie')||t.includes('FDF')) return 'incendie'; if(t.includes('SAP')) return 'sap'; if(t.includes('SR')) return 'sr'; if(t.includes('Police')) return 'police'; return 'renfort'; }
 
-// Clic carte
 document.getElementById('map-overlay').addEventListener('click', function(e){
   if(tool!=='add') return;
   closePopups();
-  const rect = this.getBoundingClientRect();
-  const px = ((e.clientX-rect.left)/rect.width*100).toFixed(2);
-  const py = ((e.clientY-rect.top)/rect.height*100).toFixed(2);
-  const cx = e.clientX-rect.left;
-  const cy = e.clientY-rect.top;
-  showAddPopup(px,py,cx,cy);
+  const rect=this.getBoundingClientRect();
+  const px=((e.clientX-rect.left)/rect.width*100).toFixed(2);
+  const py=((e.clientY-rect.top)/rect.height*100).toFixed(2);
+  showAddPopup(px,py,e.clientX-rect.left,e.clientY-rect.top);
 });
 
-const TYPES = ['🔥 Incendie','🚑 SAP','🚧 SR','🌲 FDF','👮 Police','🚨 Renfort'];
+const TYPES=['🔥 Incendie','🚑 SAP','🚧 SR','🌲 FDF','👮 Police','🚨 Renfort'];
 
 function showAddPopup(px,py,cx,cy){
-  const pop = document.getElementById('add-popup');
-  const w = 265, h = 360;
-  const zone = document.getElementById('carte-zone').getBoundingClientRect();
-  const left = cx+w > zone.width  ? cx-w-5 : cx+10;
-  const top  = cy+h > zone.height ? cy-h-5 : cy+10;
-  pop.style.cssText = `display:block;position:absolute;left:${left}px;top:${top}px`;
-  pop.className = 'add-popup';
-  pop.innerHTML = `
+  const pop=document.getElementById('add-popup');
+  const w=265,h=360;
+  const zone=document.getElementById('carte-zone').getBoundingClientRect();
+  pop.style.cssText=`display:block;position:absolute;left:${cx+w>zone.width?cx-w-5:cx+10}px;top:${cy+h>zone.height?cy-h-5:cy+10}px`;
+  pop.className='add-popup';
+  pop.innerHTML=`
     <div class="pop-title">➕ Nouvelle intervention <button class="pop-close" onclick="closePopups()">✕</button></div>
     <div class="type-grid">${TYPES.map((t,i)=>`<div class="type-pill${i===0?' sel':''}" onclick="selType(this)">${t}</div>`).join('')}</div>
     <div class="p-label">Message / Situation</div>
@@ -315,45 +281,38 @@ function showAddPopup(px,py,cx,cy){
 function selType(el){ document.querySelectorAll('.type-pill').forEach(p=>p.classList.remove('sel')); el.classList.add('sel'); }
 
 function addInterv(px,py){
-  const typeEl = document.querySelector('.type-pill.sel');
-  const type = typeEl?.textContent || '🚨 Renfort';
-  const msg   = document.getElementById('pop-msg')?.value || 'Intervention';
-  const units = document.getElementById('pop-units')?.value || '';
-  const urg   = document.getElementById('pop-urg')?.value || '🟡 Normale';
+  const typeEl=document.querySelector('.type-pill.sel');
+  const type=typeEl?.textContent||'🚨 Renfort';
+  const msg=document.getElementById('pop-msg')?.value||'Intervention';
+  const units=document.getElementById('pop-units')?.value||'';
+  const urg=document.getElementById('pop-urg')?.value||'🟡 Normale';
   iCount++;
-  const id = 'INT-'+String(iCount).padStart(3,'0');
-  const time = new Date().toLocaleTimeString('fr-FR');
-  const interv = {id,type,msg,units,urg,px,py,time};
-  intervs[id] = interv;
-  chronos[id] = Date.now();
-  addMarker(interv);
-  addICard(interv);
-  updateSD(type);
-  updateStats();
-  closePopups();
+  const id='INT-'+String(iCount).padStart(3,'0');
+  const time=new Date().toLocaleTimeString('fr-FR');
+  const interv={id,type,msg,units,urg,px,py,time};
+  intervs[id]=interv; chronos[id]=Date.now();
+  addMarker(interv); addICard(interv); updateSD(type); updateStats(); closePopups();
   toast(`🚨 ${type} — ${id}`,'i');
 }
 
 function addMarker(iv){
-  const color = tColor(iv.type);
-  const el = document.createElement('div');
+  const color=tColor(iv.type);
+  const el=document.createElement('div');
   el.className='map-marker'; el.id='mk-'+iv.id;
   el.style.cssText=`position:absolute;left:${iv.px}%;top:${iv.py}%;transform:translate(-50%,-50%);cursor:pointer;pointer-events:all;z-index:10;`;
   el.innerHTML=`<div class="marker-ring" style="background:${color}"></div><div class="marker-dot" style="background:${color}"></div><div class="marker-label" style="color:${color}">${iv.id}</div>`;
-  el.addEventListener('click',e=>{e.stopPropagation();if(tool==='view') showMkPopup(iv.id,e);});
+  el.addEventListener('click',e=>{ e.stopPropagation(); if(tool==='view') showMkPopup(iv.id,e); });
   document.getElementById('map-markers-layer').appendChild(el);
 }
 
 function showMkPopup(id,e){
   closePopups();
-  const iv = intervs[id]; if(!iv) return;
-  const pop = document.getElementById('mk-popup');
-  const rect = document.getElementById('carte-zone').getBoundingClientRect();
-  const cx = e.clientX-rect.left, cy = e.clientY-rect.top;
+  const iv=intervs[id]; if(!iv) return;
+  const pop=document.getElementById('mk-popup');
+  const rect=document.getElementById('carte-zone').getBoundingClientRect();
+  const cx=e.clientX-rect.left, cy=e.clientY-rect.top;
   const w=235,h=180;
-  const left = cx+w>rect.width ? cx-w-5 : cx+10;
-  const top  = cy+h>rect.height? cy-h-5 : cy+10;
-  pop.style.cssText=`display:block;position:absolute;left:${left}px;top:${top}px;`;
+  pop.style.cssText=`display:block;position:absolute;left:${cx+w>rect.width?cx-w-5:cx+10}px;top:${cy+h>rect.height?cy-h-5:cy+10}px;`;
   pop.className='mk-popup';
   pop.innerHTML=`
     <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
@@ -365,13 +324,13 @@ function showMkPopup(id,e){
     <div class="mk-actions">
       <button class="mk-btn mk-urg" onclick="urgence('${id}')">🔴 Urgence</button>
       <button class="mk-btn mk-dos" onclick="dosDepuisInterv('${id}')">📁 Dossier</button>
-      <button class="mk-btn mk-clo" onclick="closeInterv('${id}')">✅ Clôturer l'intervention</button>
+      <button class="mk-btn mk-clo" onclick="closeInterv('${id}')">✅ Clôturer</button>
     </div>
   `;
 }
 
 function urgence(id){
-  const mk = document.getElementById('mk-'+id);
+  const mk=document.getElementById('mk-'+id);
   if(mk){ const dot=mk.querySelector('.marker-dot'); dot.style.boxShadow=dot.style.boxShadow?'':'0 0 12px #ef4444'; }
   closePopups(); toast('🔴 Urgence signalée — '+id,'e');
 }
@@ -380,18 +339,18 @@ function closeInterv(id){
   document.getElementById('mk-'+id)?.remove();
   document.getElementById('ic-'+id)?.remove();
   delete intervs[id]; delete chronos[id];
+  closedIds.add(id);
   clos++; updateActCount(); updateStats(); closePopups();
   toast('✅ '+id+' clôturée');
 }
 
 function clearAll(){ if(!confirm('Effacer toutes les interventions ?')) return; Object.keys(intervs).forEach(id=>closeInterv(id)); }
-
 function closePopups(){ document.getElementById('add-popup').style.display='none'; document.getElementById('mk-popup').style.display='none'; }
 
 function addICard(iv){
-  const list = document.getElementById('i-list');
-  const empty = list.querySelector('.empty'); if(empty) empty.remove();
-  const el = document.createElement('div');
+  const list=document.getElementById('i-list');
+  const empty=list.querySelector('.empty'); if(empty) empty.remove();
+  const el=document.createElement('div');
   el.className=`i-card ${tClass(iv.type)}`; el.id='ic-'+iv.id;
   el.innerHTML=`
     <div class="i-top"><span class="i-id">${iv.id}</span><span class="i-chrono" id="chr-${iv.id}">⏱ 00:00</span></div>
@@ -415,16 +374,12 @@ setInterval(()=>{
   });
 },1000);
 
-// Dossiers
 function nouveauDossier(prefill){
   dCount++;
   const id='DOS-'+String(dCount).padStart(3,'0');
   const d={id,...(prefill||{})};
   dossList[id]=d;
-  addDosItem(d);
-  ouvrirDosForm(id);
-  updateDosCount();
-  showPage('dossiers');
+  addDosItem(d); ouvrirDosForm(id); updateDosCount(); showPage('dossiers');
 }
 
 function dosDepuisInterv(ivId){
@@ -498,8 +453,7 @@ function getDosData(id){
 
 function updateDosCount(){ const c=Object.keys(dossList).length; document.getElementById('dos-badge').textContent=c; document.getElementById('dos-badge').style.display=c>0?'inline':'none'; document.getElementById('dos-count').textContent=c; document.getElementById('st-dos').textContent=c; }
 
-// Stats
-function updateSD(type){ sd.total=(sd.total||0)+1; if(type.includes('Incendie'))sd.inc++; else if(type.includes('SAP'))sd.sap++; else if(type.includes('SR'))sd.sr++; else if(type.includes('FDF'))sd.fdf++; else if(type.includes('Police'))sd.pol++; else sd.ren++; updateStats(); }
+function updateSD(type){ sd.total++; if(type.includes('Incendie'))sd.inc++; else if(type.includes('SAP'))sd.sap++; else if(type.includes('SR'))sd.sr++; else if(type.includes('FDF'))sd.fdf++; else if(type.includes('Police'))sd.pol++; else sd.ren++; updateStats(); }
 
 function updateStats(){
   document.getElementById('st-total').textContent=sd.total||0;
@@ -513,15 +467,13 @@ function initCharts(){
   charts.status=new Chart(document.getElementById('chart-status'),{type:'bar',data:{labels:['Actives','Clôturées'],datasets:[{data:[0,0],backgroundColor:['#f97316','#22c55e'],borderRadius:4,borderWidth:0}]},options:{plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#6b7280',font:{size:10}},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#6b7280',font:{size:10}},grid:{color:'rgba(255,255,255,.05)'}}}}});
 }
 
-// Toast
 function toast(msg,type='s'){ const el=document.createElement('div'); el.className=`toast ${type}`; el.textContent=msg; document.body.appendChild(el); setTimeout(()=>el.remove(),3500); }
 
-// Chargement tickets validés depuis Railway
 setInterval(async()=>{
   try{
     const res=await fetch(SERVER+'/tickets');
     const tickets=await res.json();
-    tickets.filter(t=>t.status==='accepted'&&!intervs['RBX-'+t.id]).forEach(t=>{
+    tickets.filter(t=>t.status==='accepted'&&!intervs['RBX-'+t.id]&&!closedIds.has('RBX-'+t.id)).forEach(t=>{
       const id='RBX-'+t.id;
       const iv={id,type:t.typeIntervention,msg:t.message,units:'',urg:'🟡 Normale',px:50,py:50,time:t.time};
       intervs[id]=iv; chronos[id]=Date.now();
